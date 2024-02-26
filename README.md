@@ -1,94 +1,25 @@
-<h1 align='center' style="font-size:5rem"><b>Todo List Website</b></h1>
+# Screenshots (WAIT FOR LOADING 6-7 GIF files) - 
 
-</div>
-<br><br><br>
-<h2 align='center'>
-    This is a website for you to write what you want to do after or done before and manage it.
-</h2>
+<img src="./Screenshots/ss1.gif" alt="ec2_vm_instance_created_and_connected_via_PuTTY">
+<img src="./Screenshots/ss2.PNG" alt="ec2_vm_instance_installed_git">
+<img src="./Screenshots/ss3.PNG" alt="ec2_vm_instance_installed_npm_and_nodejs">
+<img src="./Screenshots/ss6.gif" alt="ec2_vm_running_port_3000(client)_8080(server)">
+<img src="./Screenshots/ss7.gif" alt="mongodb_atlas_network_ip_set">
+<img src="./Screenshots/ss8.gif" alt="ec2_inbound_rules_set">
+<img src="./Screenshots/ss9.1.gif" alt="deployed_website">
+<img src="./Screenshots/ss9.2.gif" alt="deployed_website_after_crud">
 
-<br><br><br>
-<div align='center'>
-    <h2>LogIn</h2>
-    <img style='border-radius:5px' src="https://github.com/0AliReza0/MERN-Stack-todo-website/blob/517cfce1e892ad694cc8c8c5af4bab25c2a1c19d/images/login.png"></img>
-    <br>
-    <br><br><br>
-    <h2>SignUp</h2>
-    <img style='border-radius:5px' src="https://github.com/0AliReza0/MERN-Stack-todo-website/blob/2781e0f26fea89f3f6bce58a415c8a10a40bd9ba/images/signup.png"></img>
-    <br><br><br>
-    <h2>Main</h2>
-    <img style='border-radius:5px' src="https://github.com/0AliReza0/todo-list-website/blob/bf8e78f50ecac4cb919de828eac66acd63ca2d3c/images/main.png"></img>
-</div>
-<hr>
+# What we did - 
 
-<br><br><br><br>
+1. We hosted our MERN stack app on AWS on EC2 VM (using PuTTy to connect to VM)
+2. In 2nd attemp, we dockerized the app and then deployed it on EC2 VM
+3. Use Kubernates for container orchestration, to handle the scaling part, then try to add load balancing to it 
+4. Use Terraform cli to interact with aws console
 
-<h1 align='center'><b>Abilities</b></h1>
+# Resources - 
 
-<ul>
-<li> Able To Run Server</li>
-<li> Able To Login and Signup and even log-out</li>
-<li> Able To add a task and remove it</li>
-<li> Able To making tasks checked</li>
-  </ul>
+1. Host MERN app on EC2 - https://www.youtube.com/watch?v=xQshKLy0K4M , https://petri.com/install-git-ubuntu , https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/ 
+2. ChatGPT😉
 
-<hr>
-<br><br><br><br>
-<h1 align='center'><b>Language and technologies used in This Project</h1>
-<img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"></img>
-<img src="https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white"></img>
-<img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"></img>
-<img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"></img>
-<img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"></img>
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"></img>
-<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"></img>
-<img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></img>
-
-
-
-
-<br><br><br><br>
-
-<h1 align='center'><b>Requirements</b></h1>
-
-Download and install ``NodeJS`` from official website <a href="https://nodejs.org/">nodeJS.org</a>
-
-<br>
-
-Download and install ``MongoDB`` from official website <a href="https://www.mongodb.com/try/download/community">mongoDB.com</a>
-
-
-<br><br><br><br>
-
-<h1 align='center'><b>How To Run</b></h1>
-
-At first you have to clone the project and open it in ``IDE``
-
-<br>
-
-Open IDE's terminal and then write  ``~ cd server`` and enter
-
-<br>
-
-After that write ``~ npm i`` and enter
-
-<br>
-
-type ``~ npm start`` and then enter
-
-<br>
-
-Now open another terminal and write ``~ cd client``
-
-<br>
-
-And then write ``~ npm i`` and ``~ npm start``
-
-<br>
-
-Congratulations ,now you can ``signup`` and use the website
-
-Dummy user => 
-username - JayeshJadhav
-password - JayesJadha@123
+Elastic ip address - reamins same after stopping and restarting the VM, it have it's own charges. Elastic address is ipv4, not ipv6 and you can use it to connect to your instance, whereas public ip address will keep on changing.
 
